@@ -3,13 +3,15 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import Sidebar from './Sidebar'
 import CardSection from './CardSection'
+import LabelSet from './LabelSet'
+import BoxGroup from './BoxGroup'
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <Sidebar/>
+    <div className="overflow-hidden">
+      <LabelSet/>
       <CardSection className = 'ml-[20px]'/>
+      <BoxGroup/>
 
     </div>
   )
